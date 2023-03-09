@@ -1,0 +1,9 @@
+数据处理: data_processing_td/cd.ipynb
+straddle生成: straddle_generation_td/cd.ipynb
+波动率每日变化的分析/观测: pattern_calendar/trading_day.ipynb
+delta-neutral的收益率分析： straddle_analysis, volatility_analysis_all
+期权计算工具: Options.pyd, 计算IV使用方法是:
+	Option = Options.Strategy()
+      option.getData(K, r, T, sigma)
+      implied_vol = option.EuroCallIV(S, C_market)
+      implied_vol_p = option.EuroPutIV(S, P_market)
